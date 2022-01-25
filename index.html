@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title author="Jegan Ramamurthy V">Jegan's corner</title>
+        <meta charset="utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no"
+        />
+        <link rel="stylesheet" href="/css/styles.css" />
+        <script>
+            function myf1() {
+
+               var x = document.getElementById("select1");
+               var y = document.getElementById("select6");
+               if (x.style.display === "none") {
+               x.style.display = "block";
+               y.style.display = "block";
+               } else {
+               x.style.display = "none";
+               y.style.display = "none";
+               }
+               }
+            function myf2() {
+               var x = document.getElementById("select2");
+               var y = document.getElementById("select5");
+               if (x.style.display === "none") {
+               x.style.display = "block";
+               y.style.display = "block";
+               } else {
+               x.style.display = "none";
+               y.style.display = "none";
+               }
+               } 
+            function myf3() {
+               var x = document.getElementById("select3");
+               var y = document.getElementById("select4");
+               if (x.style.display === "none") {
+               x.style.display = "block";
+               y.style.display = "block";
+               } else {
+               x.style.display = "none";
+               y.style.display = "none";
+               }
+               } 
+            function mygame() {
+               var x = document.getElementById("gamecontent");
+               if (x.style.display === "none") {
+               x.style.display = "block";
+               } else {
+               x.style.display = "none";
+               }
+               }
+            function myanime() {
+               var x = document.getElementById("animecontent");
+               if (x.style.display === "none") {
+               x.style.display = "block";
+               } else {
+               x.style.display = "none";
+               }
+               }
+            function mycode() {
+               var x = document.getElementById("codecontent");
+               if (x.style.display === "none") {
+               x.style.display = "block";
+               } else {
+               x.style.display = "none";
+               }
+               }   
+        </script>          
+    </head>   
+    <body><hr><hr>
+        <div class="intropart">
+            <img class="pic" src="/img/jegan.jpg" alt="Jegan's pic" width= "150px" height= "150px">
+            <div class="intro">
+                <h1>Jegan Ramamurthy V</h1>
+                <p>B.Tech -Computer Science and Engineering<br>Gender: Male<br>Date of Birth: 11/02/2003</p>
+            </div>
+        </div>
+        <hr><hr>
+        <div class="content">
+            <h2>Educational Qualifications:</h2>
+            <table>
+                <thead>
+                    <td>Year</td>
+                    <td>Degree/examination</td>
+                    <td> Institution/Board</td>
+                    <td>CGPA/Percentage</td>
+                </thead>
+                <tr>
+                    <td>2020-present</td>
+                    <td>B.Tech-CSE</td>
+                    <td> NIT, Tiruchirappalli</td>
+                    <td>8.79</td>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>Class-XII</td>
+                    <td> Suguna PIP school,
+                        Coimbatore, CBSE.</td>
+                    <td>94.6%</td>
+                </tr>   
+                <tr>
+                    <td>2018</td>
+                    <td>Class-X</td>
+                    <td> Suguna PIP school,
+                        Coimbatore, CBSE.</td>
+                    <td>86.6%</td>
+                </tr>   
+            </table><br>
+            <h2>Interests:</h2>
+            <button onclick="mygame()" id="game">🎮</button>
+            <button onclick="myanime()" id="anime" >⚔</button>
+            <button onclick="mycode()" id="code">💻</button>
+            <div id="gamecontent">
+            <h4>Gaming</h4>
+            <p>I love playing games like Valorant, CS GO, Tomb Raider, Seikiro. I love gaming because they are a very good way to pass time.</p>
+            </div>
+            <div id="animecontent">
+                <h4>Anime Watching</h4>
+                <p>I love watching animes like One piece,AOT ,Black Clover. I love them because they are a very good way to pass time.</p>
+            </div>
+            <div id="codecontent">
+                <h4>Coding</h4>
+                <p>I love coding games in html and am currently learning solidity.</p>
+            </div>
+            <h2>Positions of Responsiblity:</h2>
+            <img class="select" src="/img/selector.png" alt="selector" usemap="#selector" height="500px" width="500px">
+            <map name="selector">
+                <area onclick="myf1()" shape="poly" coords="244,192,215,205,192,220,164,251,149,276,136,292,67,254,29,184,55,93,109,42,167,17,235,37,255,54,230,96,220,135,235,158,241,173,243,192" href="#" >
+                <area onclick="myf2()" shape="poly" coords="256,191,308,185,354,197,379,214,422,258,508,184,500,74,407,4,315,13,278,53,249,130,253,173" href="#">
+                <area onclick="myf3()" shape="circle" coords="280,350,160" href="#"  >
+            </map>
+            <ul>
+                <dl>
+                    <dt id="select3"><b> Co-Ordinator, Technical Council:</b></dt>
+                    <dd id="select4">Member of the Technical Council of NIT-T and part of various communities such as 
+                        Google Developer Student Clubs (GDSC). As of part of Technical Councils’ open 
+                        source initiative ‘TeCOS’, I have played a role in spreading Open Source culture in the 
+                        college.</dd><br>
+                    <dt id="select2"><b> Co-Ordinator, Digital PR, Vortex:</b></dt>
+                    <dd id="select5">As a coordinator in the CSE department’s symposium, Vortex have contributed to the 
+                        growth of Digital Public and Relations of Vortex.
+                    </dd><br>
+                    <dt id="select1"><b>Organizing Committee Member, AAVEG’21:</b></dt>
+                    <dd id="select6">Ideated, conducted, and managed events in the college fest known as AAVEG during 
+                        the year 2021.   
+                    </dd>
+                 </dl>
+            </ul>
+            <h2>Extracurricular Activities:</h2>
+            <ul>
+                <dl>
+                    <dt><b>Member of National Service Scheme:</b></dt>
+                    <dd> Participated in multiple initiatives like planting 
+                        sapling and food distribution.
+                    </dd><br>
+                    <dt><b>Mentor for Freshers:</b></dt>
+                    <dd>As a part of the orientation mentor team, served as a mentor and 
+                        guided 50+ freshers.
+                    </dd><br>
+                 </dl>
+            </ul>
+        </div>   
+        <footer>
+            <p>Contact me:</p>
+            <p>📱- 9566529906</p>
+            <p>📧- jeganramamurthyv@gmail.com</p>
+        </footer>
+    </body>
+
+</html>

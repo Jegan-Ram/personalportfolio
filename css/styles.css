@@ -1,0 +1,71 @@
+body{
+    background-color: #ECF0F1 ;
+}
+.intropart{
+    width: max-content;
+    height: 160px;
+   
+}
+.intro{
+   position: relative;
+   top: -150px;
+   left: 647px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   text-align: center;
+   
+}
+.pic{
+    position: relative;
+    left: 490px;
+}
+.select{
+    position:relative;
+    left: 512px; 
+}    
+
+table,td{
+
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid black;
+    margin-right: auto;
+    margin-left: auto;
+}
+thead{
+    background-color: black;
+    color: white;
+}
+
+tr:hover {
+    background-color: white;
+    color: black;  
+}
+
+.content{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+footer{
+    position: relative;
+    display: block;
+    background-color: gray; 
+    text-align: center;
+    color: white;
+}
+
+#select1,#select2,#select3,#select4,#select5,#select6{
+    display: none;
+}
+
+#game,#code,#anime{
+    position: relative;
+    left:620px;
+    padding: 15px 32px;
+}
+
+
+#gamecontent,#codecontent,#animecontent{
+    display: none;
+}
+
