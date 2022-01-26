@@ -8,66 +8,7 @@
           content="width=device-width, initial-scale=1, user-scalable=no"
         />
         <link rel="stylesheet" href="/css/styles.css" />
-        <script>
-            function myf1() {
-
-               var x = document.getElementById("select1");
-               var y = document.getElementById("select6");
-               if (x.style.display === "none") {
-               x.style.display = "block";
-               y.style.display = "block";
-               } else {
-               x.style.display = "none";
-               y.style.display = "none";
-               }
-               }
-            function myf2() {
-               var x = document.getElementById("select2");
-               var y = document.getElementById("select5");
-               if (x.style.display === "none") {
-               x.style.display = "block";
-               y.style.display = "block";
-               } else {
-               x.style.display = "none";
-               y.style.display = "none";
-               }
-               } 
-            function myf3() {
-               var x = document.getElementById("select3");
-               var y = document.getElementById("select4");
-               if (x.style.display === "none") {
-               x.style.display = "block";
-               y.style.display = "block";
-               } else {
-               x.style.display = "none";
-               y.style.display = "none";
-               }
-               } 
-            function mygame() {
-               var x = document.getElementById("gamecontent");
-               if (x.style.display === "none") {
-               x.style.display = "block";
-               } else {
-               x.style.display = "none";
-               }
-               }
-            function myanime() {
-               var x = document.getElementById("animecontent");
-               if (x.style.display === "none") {
-               x.style.display = "block";
-               } else {
-               x.style.display = "none";
-               }
-               }
-            function mycode() {
-               var x = document.getElementById("codecontent");
-               if (x.style.display === "none") {
-               x.style.display = "block";
-               } else {
-               x.style.display = "none";
-               }
-               }   
-        </script>          
+        <script src="/js/index.js"></script>       
     </head>   
     <body><hr><hr>
         <div class="intropart">
@@ -148,19 +89,34 @@
                     </dd>
                  </dl>
             </ul>
-            <h2>Extracurricular Activities:</h2>
-            <ul>
-                <dl>
-                    <dt><b>Member of National Service Scheme:</b></dt>
-                    <dd> Participated in multiple initiatives like planting 
-                        sapling and food distribution.
-                    </dd><br>
-                    <dt><b>Mentor for Freshers:</b></dt>
-                    <dd>As a part of the orientation mentor team, served as a mentor and 
-                        guided 50+ freshers.
-                    </dd><br>
-                 </dl>
-            </ul>
+            
+            <h2>Extra-Curricular Activities:</h2>
+
+            <button type="button" class="collapsible">National Service Scheme</button>
+            <div class="content2">
+              <p>Participated in multiple initiatives like planting sapling and food distribution.</p>
+            </div>
+            <button type="button" class="collapsible">Mentor for freshers</button>
+            <div class="content2">
+              <p>As a part of the orientation mentor team, served as a mentor and guided 50+ freshers.</p>
+            </div>
+
+            <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+                
+                for (i = 0; i < coll.length; i++) {
+                  coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                      content.style.display = "none";
+                    } else {
+                      content.style.display = "block";
+                    }
+                  });
+                }
+                </script>
         </div>   
         <footer>
             <p>Contact me:</p>
